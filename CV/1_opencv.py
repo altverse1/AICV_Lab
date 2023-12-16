@@ -26,11 +26,11 @@ def process_video(video_path):
 if __name__ == "__main__":
     choice = input("Enter i for image or v for video: ")
     if choice.lower() == 'i':
-        image = cv2.imread('imgs&vids/community.jpg')
+        image = cv2.imread('..\imagedata\gumball.jpeg')
         process_image(image)
         
     elif choice.lower() == 'v':
-        video_path = 'imgs&vids/m2-res_240p.mp4'
+        video_path = '..\imagedata\meme.mp4'
         process_video(video_path)
         
     else:
